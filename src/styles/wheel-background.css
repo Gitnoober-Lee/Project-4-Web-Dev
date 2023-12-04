@@ -1,0 +1,7 @@
+.spin-back {
+    width: 80%;
+    height: 500px;
+    position: relative; /* relative and static have the same effect of positioning elements according the normal flow of document*/
+    /*left: 100px;*/
+    z-index: 0; /*Take effect when use with position: relative; */
+}

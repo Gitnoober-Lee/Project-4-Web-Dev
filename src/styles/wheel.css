@@ -1,0 +1,35 @@
+.spin-crop {
+    width: 380px; /* Adjust the width and height to define the circle size */
+    height: 380px;
+    overflow: hidden; /* Hide the content that goes beyond the defined width and height */
+    border-radius: 50%; /* Create a circular border-radius */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -450px;
+}
+
+.spin-crop img {
+    height: auto; /* Maintain the aspect ratio, automatically adjusting the height */
+}
+
+.spin-picture {
+    width: 383px;
+    height: auto;
+    border: solid 1px;
+    margin-left: -2.5px;
+    margin-top: -2px;
+}
+
+.spin-picture {
+    animation: rotate 10s linear infinite; /* Adjust the rotation speed (5s in this example) */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
