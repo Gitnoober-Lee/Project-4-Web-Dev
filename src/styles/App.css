@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+.Google-icon{
+  position: absolute;
+  top: 15%;
+  left: 34%;
+  width: 500px;
+}
+
+.Google-login{
+  position: absolute;
+  top: 40%;
+  left: 43%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

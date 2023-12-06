@@ -8,9 +8,9 @@
     margin-top: -450px;
 }
 
-.spin-crop img {
-    height: auto; /* Maintain the aspect ratio, automatically adjusting the height */
-}
+/*.spin-crop img {*/
+/*    height: auto; !* Maintain the aspect ratio, automatically adjusting the height *!*/
+/*}*/
 
 .spin-picture {
     width: 383px;
@@ -18,10 +18,13 @@
     border: solid 1px;
     margin-left: -2.5px;
     margin-top: -2px;
+    pointer-events: none;
 }
 
-.spin-picture {
-    animation: rotate 10s linear infinite; /* Adjust the rotation speed (5s in this example) */
+@media (prefers-reduced-motion: no-preference) {
+    .spin-picture {
+        animation: rotate infinite 10s linear; /* Adjust the rotation speed (5s in this example) */
+    }
 }
 
 @keyframes rotate {
